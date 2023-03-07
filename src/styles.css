@@ -109,11 +109,11 @@ h1 {
   font-size: 3rem;
 }
 
-.card-container {
+.hero-imgs-container {
   /* display: flex; */
 }
 
-.card-container img {
+.hero-imgs-container img {
   height: 20rem;
 }
 
