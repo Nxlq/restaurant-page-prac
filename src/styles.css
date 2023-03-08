@@ -99,24 +99,106 @@ nav button:hover {
   color: var(--contrasting-color);
 }
 
-/* --- Landing Page Main Section Styles */
+/* --- Landing Page Hero Section Styles */
 
-span#h1-colored {
+main {
+  padding: 75px 140px;
+  height: 35rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#hero-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+#hero-text-container > p {
+  color: var(--h1-color);
+  font-size: 1.25rem;
+  width: 23rem;
+  margin: 0px;
+}
+
+span.h1-colored {
   color: var(--contrasting-color);
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
+  margin: 0px;
+}
+
+#hero-btn-order {
+  background-color: var(--contrasting-color);
+  color: var(--nav-bg-color);
+  height: 3.5rem;
+  width: 10rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.3rem;
+}
+
+.hero-reviews-container {
+  display: flex;
+  gap: 10px;
+}
+
+.hero-reviews-container p {
+  margin: 0px;
+  font-weight: 600;
+}
+
+.img-review-star {
+  height: 40px;
+}
+
+.customer-icons-container img:nth-child(n + 2) {
+  margin-left: -22px;
+}
+
+.customer-icon {
+  height: 50px;
+  width: 50px;
+  border: solid 2px var(--h1-color);
+  border-radius: 50%;
+}
+
+.reviews-container {
+  display: flex;
+  align-items: center;
+  /* padding-top: 7px; */
+}
+
+.rating {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.rating-count {
+  color: rgb(155, 152, 152);
+  font-size: 1rem;
 }
 
 .hero-imgs-container {
-  /* display: flex; */
+  margin-left: -270px;
+  align-self: flex-end;
+  display: flex;
 }
 
 .hero-imgs-container img {
   height: 20rem;
 }
 
+#img-scooter {
+}
+
 #img-map {
   position: absolute;
+  margin-left: 550px;
+  margin-top: -150px;
+  /* margin-top: -150px; */
+
+  /* margin-top: -150px; */
 }
