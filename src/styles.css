@@ -33,6 +33,7 @@ body {
   border-radius: 20px;
   padding-right: 30px;
   border: solid var(--h1-color) 2px;
+  color: var(--h1-color);
 }
 
 .nav-btns {
