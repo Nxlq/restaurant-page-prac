@@ -128,8 +128,19 @@ export function generateHero() {
 
     reviewsContainer.append(customerIconsContainer, container);
 
+    // generate hero images container/content (right side of hero)
+    const imgsContainer = document.createElement("div");
+    imgsContainer.classList.add("hero-imgs-container");
+    const imgScooter = document.createElement("img");
+    imgScooter.id = "img-scooter";
+    imgScooter.src = "/images/undraw_on_the_way_re_swjt (1).svg";
+    const imgMap = document.createElement("img");
+    imgMap.id = "img-map";
+    imgMap.src = "/images/undraw_tourist_map_re_293e (1).svg";
+    imgsContainer.append(imgScooter, imgMap);
+
     heroLeft.append(h1, p, btnOrderNow, reviewsContainer);
-    main.append(heroLeft);
+    main.append(heroLeft, imgsContainer);
     return main;
   }
 
