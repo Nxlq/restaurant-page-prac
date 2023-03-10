@@ -6,10 +6,9 @@ window.addEventListener("load", (e) => {
   const contentContainer = document.querySelector("#content");
   const main = document.querySelector("main");
   const nav = generateNav();
-  const [heroLeft, heroRight] = generateHero();
-  console.log(heroLeft, heroRight);
+  const hero = generateHero(); // returns arr of elements
   const aboutUs = generateAboutUs();
 
   contentContainer.insertBefore(nav, main);
-  main.append(heroLeft, heroRight);
+  main.append(...hero);
 });
