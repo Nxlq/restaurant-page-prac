@@ -7,7 +7,7 @@ window.addEventListener("load", (e) => {
   const main = document.querySelector("main");
   const nav = generateNav();
   const hero = generateHero(); // returns arr of elements
-  const aboutUs = generateAboutUs();
+  // const aboutUs = generateAboutUs();
 
   contentContainer.insertBefore(nav, main);
   main.append(...hero);
