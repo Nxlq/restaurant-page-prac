@@ -1,4 +1,8 @@
+import { generateAboutUs } from "./about-us-dom.js";
+import { generateHero } from "./hero-dom";
+
 export function generateNav() {
+  const main = document.querySelector("main");
   const nav = document.createElement("nav");
   nav.id = "landing-page-nav";
 
@@ -50,5 +54,25 @@ export function generateNav() {
 
   // append nav together
   nav.append(logoContainer, navBtns, navRightDiv);
+
+  function handleNavBtns() {
+    function clearMain() {
+      while (main.firstChild) {
+        main.removeChild(main.firstChild);
+      }
+    }
+
+    btnHome.addEventListener("click", () => {
+      clearMain();
+      main.append(...generateHero());
+    });
+
+    btnAboutUs.addEventListener("click", () => {
+      clearMain();
+      main.append(generateAboutUs());
+    });
+  }
+
+  handleNavBtns();
   return nav;
 }
