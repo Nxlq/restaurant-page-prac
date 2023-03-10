@@ -1,5 +1,6 @@
 import { generateAboutUs } from "./about-us-dom.js";
 import { generateHero } from "./hero-dom";
+import { generateContactUs } from "./contact-us-dom.js";
 
 export function generateNav() {
   const main = document.querySelector("main");
@@ -70,6 +71,11 @@ export function generateNav() {
     btnAboutUs.addEventListener("click", () => {
       clearMain();
       main.append(generateAboutUs());
+    });
+
+    btnContactUs.addEventListener("click", () => {
+      clearMain();
+      main.append(generateContactUs());
     });
   }
 
